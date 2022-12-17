@@ -39,15 +39,14 @@ Dataset baseline score:
 ```
 Dataset baseline score:
 
-                   precision    recall  f1-score   support
+                  precision    recall  f1-score   support
 
-    Benign          0.95715   0.97607   0.96652     30209
-    Malware         0.77364   0.ddddd   0.70752      3791
+    Benign          0.98455   0.99178   0.98815     20812
+    Malware         0.88889   0.80851   0.84680      1692
 
-    accuracy                            0.93991     34000
-    macro avg       0.86539   0.81394   0.83702     34000
-    weighted avg    0.93669   0.93991   0.93764     34000
-
+    accuracy                            0.97800     22504
+    macro avg       0.93672   0.90015   0.91747     22504
+    weighted avg    0.97735   0.97800   0.97752     22504
 ```
 3.	**Dataset_3** - Same as before but this time the dataset includes more complex parameters in any request making it more authentic but also making it much harder to simply "plug and play" on any machine learning model. According to the model you choose some of you may need to approach the data exploration and feature extraction differently.
 ```
