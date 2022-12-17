@@ -20,7 +20,7 @@ API security contains four datasets each will be divided to Train (70%), Test (1
 All the datasets contain HTTP traffic of API requests and responses. 
 
 The datasets are:
-1.	Dataset_1: Basic API traffic containing the least number of attacks. 
+1.	**Dataset_1** - The most basic API traffic containing the least number of attacks and endpoints. Will basically enable to have a soft start. 
 
 ```
 Dataset baseline score:
@@ -35,7 +35,7 @@ Dataset baseline score:
     weighted avg    0.97000   0.96825   0.96827      1008
 
 ```
-2.	Dataset_2
+2.	**Dataset_2** - A more advance version of the former dataset containing much more attacks and endpoint (almost double). The data is also more complex with a higher randomization mechanism.
 ```
 Dataset baseline score:
 
@@ -49,7 +49,7 @@ Dataset baseline score:
     weighted avg    0.93669   0.93991   0.93764     34000
 
 ```
-3.	Dataset_3
+3.	**Dataset_3** - Same as before but this time the dataset includes more complex parameters in any request making it more authentic but also making it much harder to simply "plug and play" on any machine learning model. According to the model you choose some of you may need to approach the data exploration and feature extraction differently.
 ```
 Dataset baseline score:
 
@@ -63,7 +63,7 @@ Dataset baseline score:
     weighted avg    0.93669   0.93991   0.93764     34000
     
 ```
-4.	Dataset_4
+4.	**Dataset_4** - The most advance and complex dataset containing all the above and some more advanced features like API redirection, more requests types, deeper data access and more.
 ```
 Dataset baseline score:
 
@@ -93,7 +93,7 @@ The competition datasets include various API attack you may or may not encounter
 
 4. **Cookie Injection** - Cookies injected to a session they were not originated from. This is used sometimes to access another user illegitimately by using his tokens. 
 
-5. **XSS**
+5. **Cross Site Scripting (XSS)** - Another very widely used web vulnerability XSS enables the attacker to run client-side code that will eventually affect sensitive processes handled by the backend.
 
 6. **Log4J** - One of the most famous recently patched vulnerabilities. An exploit in JAVA servers using the famous Apache logging library that enables to run code remotely (This is actually an "easy" RCE exploit) on the server.
 
@@ -130,4 +130,13 @@ Please see the example [Jupyter code](./baseling_model.ipynb) that will help you
 
 ## Submission Guide
 
+In order to submit your result file please upload it to [this](https://drive.google.com/drive/folders/1-0YWpS6laW1Y8gKasBt-zbnmrvY2roUt?usp=share_link) Google Drive folder (You will need to request for permissions)
 
+1. In the submissions' folder create a folder with your team's name.
+
+2. Upload all the result files in your team's folder.
+* Please make sure to upload the files in this exact format and name (The baseline code currently saves in this format):
+
+<img src="./Images/result_folder.png" align="middle">
+
+Once a day our grading script will run over the files and update your grading files and leaderboard accordingly.
