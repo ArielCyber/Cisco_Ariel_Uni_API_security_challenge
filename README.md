@@ -81,12 +81,34 @@ Dataset baseline score:
 You will need to prepare four models (one per dataset) from the Train and test sets.
 The validation dataset does not contain labels. Once you build your model, please run the validation set and upload the output as described in the submission guide below.
 
+## Attacks
+
+The competition datasets include various API attack you may or may not encounter in any dataset. This is a basic description of the attacks you are encouraged to search online about these attacks in order to map out their features:
+
+1. **SQL Injection** - One of the most common web attacks, uses backend SQL queries to inject code directly to the servers SQL database.
+
+2. **Directory Traversal** - Uses basic terminal traversal strings in order to reach folders on the servers host that were not meant to be accessed by the user.
+
+3. **Remote Code Execution (RCE)** - Some may call it the most critical exploit in any system, it allows the attacker to run code remotely on the local machine.
+
+4. **Cookie Injection** - Cookies injected to a session they were not originated from. This is used sometimes to access another user illegitimately by using his tokens. 
+
+5. **XSS**
+
+6. **Log4J** - One of the most famous recently patched vulnerabilities. An exploit in JAVA servers using the famous Apache logging library that enables to run code remotely (This is actually an "easy" RCE exploit) on the server.
+
+7. **Log Forging** - A technique of using the system to print fake or fraudulent logs. This enables an attacker to "inject" other user logs or fake his own attack logs in order to make it harder for any security researcher to find out what he really did during his access.
+
 ## Baseline Model
 
 Please see the [baseline](./baseling_model.ipynb) model code that contain:
+
 1.	Basic log parsing (you can improve the logic)
+
 2.	Basic feature example of feature extraction (you can improve the logic)
+
 3.	Basic machine learning model (you can create and type of AI/ML model you want)
+
 4.	Output format (this you can’t change the competitions grading code needs this exact format in order to check the result correctly)
 
 Each dataset contains a list of JSON file with this format:
@@ -97,8 +119,11 @@ Once you upload the results to the Google Drive folder the code will analyze you
 
 ## Scoring
 The competition score is based on:
+
 1.	Cisco judges
+
 2.	Competition average top10 ranking
+
 3.	Solution presentation and innovation.
 
 Please see the example [Jupyter code](./baseling_model.ipynb) that will help you start.
