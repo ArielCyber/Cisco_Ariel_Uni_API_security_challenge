@@ -1,10 +1,12 @@
-# Cisco Competition 8/1 09:00 
+# Ariel Cyber Innovation Center <> Cisco competition
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 <img src="./Images/cyber_ariel.png" align="right">
-Cisco - Ariel University API Security Detection Challenge 2023
 
-Cisco Competition 8/1 09:00
+Competition Date 8/1 09:00 
+
+Based on the M.Sc. work of Shmuel Lavian and part of the **API Traffic Research Dataset Framework** article
 
 ## Description
 
@@ -64,7 +66,21 @@ Dataset baseline score:
 ```
 4.	**Dataset_4** - The most advance and complex dataset containing all the above and some more advanced features like API redirection, more requests types, deeper data access and more.
 ```
-Dataset baseline score:
+Dataset baseline score - Label phase:
+
+                   precision    recall  f1-score   support
+
+    Benign          0.95715   0.97607   0.96652     30209
+    Malware         0.77364   0.ddddd   0.70752      3791
+
+    accuracy                            0.93991     34000
+    macro avg       0.86539   0.81394   0.83702     34000
+    weighted avg    0.93669   0.93991   0.93764     34000
+    
+```
+
+```
+Dataset baseline score - Attack type phase:
 
                    precision    recall  f1-score   support
 
