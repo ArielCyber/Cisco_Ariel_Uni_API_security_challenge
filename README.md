@@ -25,7 +25,7 @@ The datasets are:
 1.	**Dataset_1** - The most basic API traffic containing the least number of attacks and endpoints. Will basically enable to have a soft start. 
 
 ```
-Dataset baseline score:
+Dataset 1 baseline score:
 
                    precision    recall  f1-score   support
 
@@ -39,7 +39,7 @@ Dataset baseline score:
 ```
 2.	**Dataset_2** - A more advance version of the former dataset containing much more attacks and endpoint (almost double). The data is also more complex with a higher randomization mechanism.
 ```
-Dataset baseline score:
+Dataset 2 baseline score:
 
                   precision    recall  f1-score   support
 
@@ -52,7 +52,7 @@ Dataset baseline score:
 ```
 3.	**Dataset_3** - Same as before but this time the dataset includes more complex parameters in any request making it more authentic but also making it much harder to simply "plug and play" on any machine learning model. According to the model you choose some of you may need to approach the data exploration and feature extraction differently.
 ```
-Dataset baseline score:
+Dataset 3 baseline score - Label phase:
 
                    precision    recall  f1-score   support
 
@@ -64,33 +64,57 @@ Dataset baseline score:
     weighted avg    0.93669   0.93991   0.93764     34000
     
 ```
+
+```
+Dataset 3 baseline score - Attack Type phase:
+
+                     precision    recall  f1-score   support
+
+             Benign    0.95649   0.97705   0.96666     22659
+   Cookie Injection    1.00000   0.99829   0.99914       584
+Directory Traversal    0.17021   0.11511   0.13734       278
+              LOG4J    0.87582   0.48201   0.62181       278
+        Log Forging    0.33333   0.15194   0.20874       283
+                RCE    0.98582   0.98582   0.98582       282
+      SQL Injection    0.68499   0.58169   0.62913       557
+                XSS    0.78584   0.74144   0.76300       584
+
+           accuracy                        0.93966     25505
+          macro avg    0.72406   0.62917   0.66395     25505
+       weighted avg    0.93161   0.93966   0.93438     25505
+```
+
 4.	**Dataset_4** - The most advance and complex dataset containing all the above and some more advanced features like API redirection, more requests types, deeper data access and more.
 ```
-Dataset baseline score - Label phase:
+Dataset 4 baseline score - Label phase:
 
-                   precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-    Benign          0.95715   0.97607   0.96652     30209
-    Malware         0.77364   0.ddddd   0.70752      3791
+      Benign    0.91077   0.72604   0.80798      5019
+     Malware    0.79145   0.93596   0.85766      5575
 
-    accuracy                            0.93991     34000
-    macro avg       0.86539   0.81394   0.83702     34000
-    weighted avg    0.93669   0.93991   0.93764     34000
-    
+    accuracy                        0.83651     10594
+   macro avg    0.85111   0.83100   0.83282     10594
+weighted avg    0.84798   0.83651   0.83412     10594
 ```
 
 ```
-Dataset baseline score - Attack type phase:
+Dataset 4 baseline score - Attack type phase:
 
-                   precision    recall  f1-score   support
+                     precision    recall  f1-score   support
 
-    Benign          0.95715   0.97607   0.96652     30209
-    Malware         0.77364   0.ddddd   0.70752      3791
+             Benign    0.79608   0.78402   0.79000      5019
+   Cookie Injection    0.62268   0.61020   0.61638      1098
+Directory Traversal    0.81365   0.56364   0.66595       550
+              LOG4J    0.67879   0.21374   0.32511       524
+        Log Forging    0.80899   1.00000   0.89441       576
+                RCE    0.26182   0.27434   0.26793       565
+      SQL Injection    0.61308   0.77965   0.68640      1130
+                XSS    0.58773   0.66873   0.62562      1132
 
-    accuracy                            0.93991     34000
-    macro avg       0.86539   0.81394   0.83702     34000
-    weighted avg    0.93669   0.93991   0.93764     34000
-    
+           accuracy                        0.69813     10594
+          macro avg    0.64785   0.61179   0.60898     10594
+       weighted avg    0.70364   0.69813   0.69179     10594
 ```
 
 You will need to prepare four models (one per dataset) from the Train and test sets.
@@ -142,6 +166,17 @@ The competition score is based on:
 3.	Solution presentation and innovation.
 
 Please see the example [Jupyter code](./baseling_model.ipynb) that will help you start.
+
+## Challenge Phases
+
+As you can see by the baseline scores above, this challenge has 6 different phases which you will be required to submit a result for each one separately:
+
+1. Dataset 1 label phase
+1. Dataset 2 label phase
+1. Dataset 3 label phase
+1. Dataset 4 label phase
+1. Dataset 3 attack_type phase
+1. Dataset 5 attack_type phase
 
 ## Submission Guide
 
