@@ -103,18 +103,18 @@ Dataset 4 baseline score - Attack type phase:
 
                      precision    recall  f1-score   support
 
-             Benign    0.79608   0.78402   0.79000      5019
-   Cookie Injection    0.62268   0.61020   0.61638      1098
-Directory Traversal    0.81365   0.56364   0.66595       550
-              LOG4J    0.67879   0.21374   0.32511       524
-        Log Forging    0.80899   1.00000   0.89441       576
-                RCE    0.26182   0.27434   0.26793       565
-      SQL Injection    0.61308   0.77965   0.68640      1130
-                XSS    0.58773   0.66873   0.62562      1132
+             Benign    0.87065   0.97472   0.91975     25316
+   Cookie Injection    1.00000   0.99780   0.99890      1366
+Directory Traversal    0.79130   0.39281   0.52500       695
+              LOG4J    0.88722   0.17906   0.29798       659
+        Log Forging    0.54787   0.81066   0.65385       713
+                RCE    0.00000   0.00000   0.00000       696
+      SQL Injection    0.70253   0.15868   0.25889      1399
+                XSS    1.00000   0.49823   0.66509      1415
 
-           accuracy                        0.69813     10594
-          macro avg    0.64785   0.61179   0.60898     10594
-       weighted avg    0.70364   0.69813   0.69179     10594
+           accuracy                        0.86596     32259
+          macro avg    0.72495   0.50150   0.53993     32259
+       weighted avg    0.84722   0.86596   0.83634     32259
 ```
 
 You will need to prepare four models (one per dataset) from the Train and test sets.
@@ -140,7 +140,7 @@ The competition datasets include various API attack you may or may not encounter
 
 ## Baseline Model
 
-Please see the [baseline](./baseling_model.ipynb) model code that contain:
+Please see the [baseline](https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge/blob/main/baseline_model.ipynb) model code that contain:
 
 1.	Basic log parsing (you can improve the logic)
 
@@ -165,7 +165,7 @@ The competition score is based on:
 
 3.	Solution presentation and innovation.
 
-Please see the example [Jupyter code](./baseling_model.ipynb) that will help you start.
+Please see the example [Jupyter code](https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge/blob/main/baseline_model.ipynb) that will help you start.
 
 ## Challenge Phases
 
