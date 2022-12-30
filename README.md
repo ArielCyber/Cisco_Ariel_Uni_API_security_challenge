@@ -138,6 +138,18 @@ The competition datasets include various API attack you may or may not encounter
 
 7. **Log Forging** - A technique of using the system to print fake or fraudulent logs. This enables an attacker to "inject" other user logs or fake his own attack logs in order to make it harder for any security researcher to find out what he really did during his access.
 
+### Attack Labels
+
+```
+Label phase:
+
+{'Benign': 0, 'Malware': 1}
+
+Attack Type phase:
+
+{'Benign': 0, 'Cookie Injection': 1, 'Directory Traversal': 2, 'LOG4J': 3, 'Log Forging': 4, 'RCE': 5, 'SQL Injection': 6, 'XSS': 7}
+```
+
 ## Baseline Model
 
 Please see the [baseline](https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge/blob/main/baseline_model.ipynb) model code that contain:
