@@ -120,6 +120,26 @@ Directory Traversal    0.79130   0.39281   0.52500       695
 You will need to prepare four models (one per dataset) from the Train and test sets.
 The validation dataset does not contain labels. Once you build your model, please run the validation set and upload the output as described in the submission guide below.
 
+## Datasets Download Links:
+
+[All Datasets zip file](https://drive.google.com/file/d/15MxHRAdwPXCENACwn8wLMkb98ZCjDeh6/view?usp=share_link)
+
+[Dataset 1 train json](https://drive.google.com/file/d/15B_OOD4P2zcI4qrytMYighrtukYMmY2B/view?usp=share_link)
+
+[Dataset 1 validation json](https://drive.google.com/file/d/14O_B6SNrq__Qh8erbjq5oNhrQfkYvyQ5/view?usp=share_link)
+
+[Dataset 2 train json](https://drive.google.com/file/d/15CILxAHs0Ce0SByq3CPPrKISyB1Yx0BV/view?usp=share_link)
+
+[Dataset 2 validation json](https://drive.google.com/file/d/15GmPo10B16w_7HDU5IfSGpD8kIdQlWL-/view?usp=share_link)
+
+[Dataset 3 train json](https://drive.google.com/file/d/157VGfELsL_M0PMiV-3Dr7fWK0Vd_6Sxk/view?usp=sharing)
+
+[Dataset 3 validation json](https://drive.google.com/file/d/159ijDHWRgxN4huThgxuC1ODCuoFauqAK/view?usp=sharing)
+
+[Dataset 4 train json](https://drive.google.com/file/d/14U0V9ocxtSjLaDjn1WTOmSc777G0PQd5/view?usp=share_link)
+
+[Dataset 4 validation json](https://drive.google.com/file/d/14VzugjBRCUIzObEEhN_ArSXPUBS2r9tE/view?usp=share_link)
+
 ## Attacks
 
 The competition datasets include various API attack you may or may not encounter in any dataset. This is a basic description of the attacks you are encouraged to search online about these attacks in order to map out their features:
