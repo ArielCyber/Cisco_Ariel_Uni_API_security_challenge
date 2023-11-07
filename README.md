@@ -223,3 +223,19 @@ In order to submit your result file please upload it to [this](https://drive.goo
 <img src="./Images/result_folder.png" align="middle">
 
 Once a day our grading script will run over the files and update your grading files and leaderboard accordingly.
+
+
+
+## Reference
+
+Reference to cite when you use ATRDF in a research paper:
+
+```
+@misc{Lavian_The_API_Traffic_2023,
+author = {Lavian, Shmuel and {Ariel University, Ariel Cyber Innovation Center (ACIC)}},
+month = jan,
+title = {{The API Traffic Research Dataset Framework (ATRDF)}},
+url = {https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge},
+year = {2023}
+}
+```
