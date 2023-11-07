@@ -1,0 +1,18 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: The API Traffic Research Dataset Framework (ATRDF)
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Shmuel
+    family-names: Lavian
+  - name: 'Ariel University, Ariel Cyber Innovation Center (ACIC)'
+    address: 'Ariel, Israel'
+    website: 'https://www.ariel.ac.il/'
+repository-code: >-
+  https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge
+date-released: '2023-01-01'
