@@ -238,3 +238,19 @@ url = {https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge},
 year = {2023}
 }
 ```
+
+
+
+The dataset was used in the following research paper to evaluate an anomaly detection framework designed to identify API injection attacks:
+
+```
+@article{aharon2025classification,
+  title={A classification-by-retrieval framework for few-shot anomaly detection to detect API injection},
+  author={Aharon, Udi and Dubin, Ran and Dvir, Amit and Hajaj, Chen},
+  journal={Computers \& Security},
+  volume={150},
+  pages={104249},
+  year={2025},
+  publisher={Elsevier}
+}
+```
